@@ -835,3 +835,52 @@ iframe {
 .cta-form button:hover {
   background-color: #0d9488;
 }
+
+/* =========================
+   Why Choose Cho&Co – Mobile
+   ========================= */
+@media (max-width: 768px) {
+
+  .why-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .why-left {
+    text-align: center;
+  }
+
+  .why-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .why-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  /* Icons section */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin-top: 2rem;
+  }
+
+  .feature-item {
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Our Process card */
+  .why-right {
+    width: 100%;
+  }
+
+  .process-card {
+    padding: 1.5rem;
+  }
+}
