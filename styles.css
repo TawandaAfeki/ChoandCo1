@@ -884,3 +884,25 @@ iframe {
     padding: 1.5rem;
   }
 }
+
+.file-label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.file-input {
+  width: 100%;
+  background: #374151;
+  color: #e5e7eb;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.file-hint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}

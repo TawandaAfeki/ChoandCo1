@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cho&Co</title>
+  <title>Cho&Co.</title>
+   <link rel="icon" type="image/png" sizes="128x128" href="/fav.png"/>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
       <a href="#about">About</a>
       <a href="#showcase">Our Work</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="btn-primary">Get Started</a>
+      <a href="#contact" class="btn-primary">Book a Free Demo</a>
     </nav>
 
     <!-- HAMBURGER -->
@@ -43,7 +44,7 @@
     <a href="#about">About</a>
     <a href="#showcase">Our Work</a>
     <a href="#contact">Contact</a>
-    <a href="#contact" class="mobile-cta">Get Started</a>
+    <a href="#contact" class="mobile-cta">Book a Free Demo</a>
   </div>
 </header>
 
@@ -55,7 +56,7 @@
       <span>Smart Decisions</span>
     </h1> </br>
     <p>
-      We help businesses clean, analyze, and visualize their data.
+      Businesses that use their data effectively reduce costs, <strong>Improve Efficiency</strong>, and <strong>Grow Faster</strong>. </br>
       We turn raw data into insights you can act on.
     </p>
 
@@ -66,9 +67,8 @@
     </div>
 
     <div class="hero-actions">
-      <a href="#contact"><button class="btn primary">Unlock Your Data's Value →</button></a>
-      <a href="#showcase"><button class="btn outline">View Our Work</button></a>
-    </div>
+      <button class="btn primary" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})"> Unlock Your Data's Value →</button>
+      <button class="btn outline" onclick="document.querySelector('#showcase').scrollIntoView({behavior:'smooth'})">View Our Work</button>
   </div>
 </section>
 
@@ -109,7 +109,7 @@
 
       <div class="card">
         <div class="icon-badge icon-orange"><img src="reporting.svg" alt=""></div> </br>
-        <h3>Ad-Hoc Reporting</h3> </br>
+        <h3>Customized Reporting</h3> </br>
         <p>
           Custom reports tailored to your specific business questions and decision-making needs, delivered when you need them.
         </p> </br>
@@ -302,11 +302,31 @@
     required
   ></textarea>
 
-  <button type="submit" class="btn primary full">
+  
+  
+<label class="file-label">
+  Upload your data file (CSV or Excel)
+</label>
+
+<input
+  type="file"
+  name="data_file"
+  id="data_file"
+  accept=".csv,.xlsx,.xls"
+  class="file-input"
+/>
+
+<p class="file-hint">
+  Accepted formats: .csv, .xlsx, .xls
+</p>
+
+
+  <p id="form-status" class="form-status"></p>
+
+<button type="submit" class="btn primary full">
     Send Message
   </button>
 
-  <p id="form-status" class="form-status"></p>
 </form>
 
     </div>
@@ -357,7 +377,7 @@
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-      <li><a href="choandcopty@gmail.com">choandcopty@gmail.com</a></li>
+      <li>choandcopty@gmail.com</li>
       <li><a href="tel:+27710602976">+27 71 060 2976</a></li>
       </ul>
     </div>
@@ -371,7 +391,7 @@
   </p>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
 
